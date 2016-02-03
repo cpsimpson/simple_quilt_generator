@@ -38,7 +38,7 @@ def generate(source_file_dir, size_x=10, size_y=10, max_squares=12,
                     available_images.remove(image_number)
 
     if save:
-        quilt.save("{}/{}.jpg".format(output_dir, datetime.now()), "jpeg")
+        quilt.save("{0}/{1}.jpg".format(output_dir, datetime.now()), "jpeg")
 
     if display:
         quilt.show()
